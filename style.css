@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Economica&family=Faster+One&family=Goldman&family=Graduate&family=Hanalei+Fill&family=Tomorrow&family=Turret+Road&display=swap');
+
+
+:root { 
+  --primary-color: #f29ab7;
+  --secondary-color: rgb(80, 52, 217);
+  --border-radius: 25px;
+  --box-shadow: 0 0 10px rgba(9, 9, 9, 0.714);
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%230829f8' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");}
+
+h1 {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  width: 45rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(9, 9, 9, 0.714);
+  font-family: 'Goldman';
+  font-size: 3rem;
+  background: var(--secondary-color);
+  margin: 1rem auto;
+  text-align: center;
+  color: var(--primary-color);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.788);
+  letter-spacing: .5rem;
+ 
+  
+}
+
+
+h1:hover {
+
+  filter: brightness(120%);
+}
+
+
+.container { width: 90rem;
+display: flex;
+
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 3rem auto;}
+
+
+
+.name  {
+  
+  
+  
+  
+  
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  padding: .7rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  
+}
+
+.name a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: 'Hanalei Fill';
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.788);
+  font-size: 2rem;
+  
+  background-color: var(--secondary-color);
+  
+  border-radius: var(--border-radius);
+  margin: 0 .5rem;
+ 
+  
+}
+
+.name:hover {
+  filter: brightness(120%);
+}
+
+
+.name a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
+.fa-solid.fa-delete-left {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0 .5rem;
+}
+
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.modal-container.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  width: 60rem;
+  filter: brightness(120%);
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+form {
+  padding: 1.5rem;
+
+}
+
+button {
+  margin: 1rem  0;
+  
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(73, 11, 57, 0.671);
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  h1 { width: 600px;
+  padding: .5rem;}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+}
